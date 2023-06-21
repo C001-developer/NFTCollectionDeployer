@@ -69,6 +69,8 @@ Private Key: 0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e
 
 ### 1. Install dependencies
 
+NOTE: I've tested it in node 1.18.
+
 ```bash
 make npm-install
 ```
