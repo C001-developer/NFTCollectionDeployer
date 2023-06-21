@@ -95,7 +95,7 @@ make run-client
 
 ### 4. MetaMask configuration
 
-- Connect to the local network (http://localhost:8545)
+- Connect to the local network (http://localhost:8545, ChainID: 31337)
 - Import the private key of the first account in the list above.
 - Note: if the nonce is mismatched, you can reset the account in the MetaMask settings by `Clear activity tab data`.
 
