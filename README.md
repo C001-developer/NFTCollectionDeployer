@@ -75,12 +75,16 @@ make npm-install
 
 ### 2. Run the server
 
+The deployed smart contract address is `0x5FbDB2315678afecb367f032d93F642f64180aa3`. It can be changed in your local environment, please update `backend/.env` file.
+
 ```bash
 # it wiil include the smart contract deployment and run the hardhat node
 make run-server # it will run on port 8000
 ```
 
 ### 3. Run the client
+
+Please update the `REACT_APP_NFT_FACTORY_ADDRESS` in `frontend/.env` file.
 
 ```bash
 # it will run on port 3000
@@ -93,8 +97,11 @@ make run-client
 - Import the private key of the first account in the list above.
 - Note: if the nonce is mismatched, you can reset the account in the MetaMask settings by `Clear activity tab data`.
 
-### 4. Interact with the client
+### 5. Interact with the client
 
 - `Events` tab: list the events emitted by the smart contract through the server api.
 - `Collections` tab: create a NFT collection by interacting with the smart contract.
 - `Tokens` tab: mint a NFT token by interacting with the smart contract.
+
+
+**Enjoy it!**
