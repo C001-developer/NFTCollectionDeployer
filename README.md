@@ -37,6 +37,8 @@ make stop-hardhat
 
 - To deploy the smart contract in the Goerli network, please run the following command:
 
+NOTE: I've tested it in node 1.18.
+
 ```bash
 make deploy-goerli
 ```
@@ -66,7 +68,7 @@ make run-client
 
 ### 5. MetaMask configuration
 
-- Connect to the local network (http://localhost:8545) if you are using the hardhat local network or the Goerli test network.
+- Connect to the local network (http://localhost:8545, ChainID: 31337) if you are using the hardhat local network or the Goerli test network.
 - Import the private key of the above list if you are using the hardhat local network.
 - Note: if the nonce is mismatched, you can reset the account in the MetaMask settings by `Clear activity tab data`.
 
