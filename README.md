@@ -72,7 +72,7 @@ make run-client
 - Import the private key of the above list if you are using the hardhat local network.
 - Note: if the nonce is mismatched, you can reset the account in the MetaMask settings by `Clear activity tab data`.
 
-### 5. Interact with the client
+### 6. Interact with the client
 
 - `Events` tab: list the events emitted by the smart contract through the server api.
 - `Collections` tab: create a NFT collection by interacting with the smart contract.
