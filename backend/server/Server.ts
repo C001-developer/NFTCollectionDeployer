@@ -6,7 +6,7 @@ import { syncEvents, getNFTCollectionAddress, getNFTCollectionEvents, getNFTMint
 dotenv.config();
 
 const app = express();
-const port = 8000;
+const port = process.env.SERVE_PORT || 8000;
 
 // Enable CORS for all requests
 app.use(cors());

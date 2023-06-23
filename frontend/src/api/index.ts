@@ -1,6 +1,9 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
 
-const API_URL = 'http://localhost:8000';
+dotenv.config();
+
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 export const getCollections = async () => {
     const collections = await axios.get(`${API_URL}/nft-collections`);

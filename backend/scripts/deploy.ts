@@ -7,6 +7,9 @@ async function main() {
   await nftCollectionFactory.deployed();
   
   console.log("NFTCollectionFactory deployed to:", nftCollectionFactory.address);
+  
+  const transactionReceipt = await ethers.provider.getTransactionReceipt(nftCollectionFactory.deployTransaction.hash);
+  console.log("transactionReceipt: ", transactionReceipt);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

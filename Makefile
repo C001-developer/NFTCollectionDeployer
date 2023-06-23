@@ -9,7 +9,12 @@ stop-hardhat:
 
 .PHONY: stop-hardhat
 
-run-server: run-hardhat
+deploy-goerli:
+	cd backend && npx hardhat run scripts/deploy.ts --network goerli
+
+.PHONY: deploy-goerli
+
+run-server:
 	cd backend && npm start
 
 .PHONY: run-server
